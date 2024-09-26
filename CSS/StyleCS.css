@@ -1,0 +1,204 @@
+/*****************************HEADER**********************************/
+body{
+    font-family: Barlow Condensed;
+    width:100% ;
+}
+
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+header a{
+    color: white;
+    padding: 15px;
+}
+ header a:hover {
+    color: wheat;
+    text-decoration: none;
+    font-weight: bold;
+
+ }
+ #menu-icon{
+    width: 62px;
+ }
+
+
+
+/**************************HERO SECTION*******************************/
+
+
+#hero-section {
+    background-image: url(../img/pizde.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    box-sizing: border-box;
+}
+
+#hero-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #4133329c;
+    height: 100%;
+   
+}
+
+#hero-logo{
+    width: 180px;
+}
+
+#arrow-down{
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    right: 0px;
+    margin:auto;
+    display: block;
+    width: 64px;
+
+} 
+
+
+/****************************INTRO SECTION******************************/
+
+#intro-section{
+    background: #eae7de;
+}
+.intro-icon {
+    width: 96px;
+}
+#intro-section img {
+    width: 120px;
+}
+/****************************INTRO SECTION******************************/
+
+
+/****************************ABOUT SECTION******************************/
+
+#about-bg-1 {
+    background-image: url(../img/great-place.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 480px;
+}
+
+#about-bg-2 { 
+    background-image: url(../img/fresh-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 640px;
+    position: relative;
+  
+
+}
+
+@media (max-width: 768px) {
+     #about-bg-2::before {
+    content: "";
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    background: #0e0d0db6;
+    
+    }
+}
+
+
+
+#about-text {
+    text-decoration-color: antiquewhite;
+}
+
+
+/*****************************MENU SECTION********************************/
+
+
+#menu-selection {
+    background:black;
+    
+   }
+
+#menu-section img{
+    width: 200px;
+}
+
+
+
+/****************************CONTACT SECTION******************************/
+
+#contact-info-bg-1{
+    background: linear-gradient(to right, #36313782, #36313782), url(../img/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+#contant-info-bg-1{
+    background-color: #312423a8;
+}
+
+
+/****************************MAP SECTION******************************/
+#map{
+    height: 480px;
+}
+/****************************FOOTER******************************/
+
+footer {
+    background: #312423 ;
+
+}
+footer a img {
+    width: 28px;
+}
+ @media (max-width: 768px) {
+
+    footer {
+        text-align: center;
+    }
+    #social-icons{
+        text-align: center !important;
+    }
+ }
+
+ /*****************************Mobile-menu**********************************/
+
+ #mobile-menu{
+    position: fixed;
+    top:0;
+    bottom :0;
+    left: 0;
+    right: 0;
+    background: #312423ee;
+    z-index: 2;
+    display: none;
+
+ }
+
+
+#mobile-menu a {
+    color: rgb(238, 226, 203);
+}
+
+#mobile-menu a:hover {
+    color: rgb(126, 94, 94);
+}
+
+#mobile-menu #close-btn {
+    position: absolute;
+    right: 29px;
+    top: 12px;
+    width: 36px;
+max-width: 100;
+height: auto;
+}
